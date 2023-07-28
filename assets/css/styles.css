@@ -119,6 +119,13 @@ input {
   margin-inline: auto;
   padding-inline: 0.75rem;
 }
+dg .grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.section--lg {
+  padding-block: 4rem;
+}
 .form__input {
   border: 1px solid var(--first-color);
   padding-inline: 1rem;
@@ -235,7 +242,30 @@ input {
 }
 
 /*=============== HOME ===============*/
-
+.home__container {
+  grid-template-columns: 5fr 7fr;
+  align-items: center;
+}
+.home__img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+.home__subtitle,
+.home__description {
+  font-size: var(--large-font-size);
+}
+.home__subtitle {
+  font-family: var(--second-color);
+  font-weight: var(--weight-600);
+  margin-bottom: 1rem;
+  display: block;
+}
+.home__title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--weight-70000);
+  line-height: 1.4;
+}
 /*=============== BUTTONS ===============*/
 
 /*=============== CATEGORIES ===============*/
